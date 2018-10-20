@@ -51,6 +51,7 @@ A notation is used for PHP variables that are available across each page.
 * Each sass file that styles a particular page has all its styles wrapped in a `.__{name}`, to avoid styling other pages.
 
 ##.htaccess & index.php
+
 To allow for cleaner URLs, a .htaccess file is included at the root of the project, with a RewriteRule that simply remove the */page/* and .php parts, and allow for an optional closing slash at the end of the URL.
 
 It also contains an ErrorDocument rule that simply redirects to error/404.php for 404 errors. You may add other error codes like 403.
