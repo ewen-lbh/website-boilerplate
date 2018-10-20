@@ -30,6 +30,9 @@ The pages contain folders for each page that will be **viewed** by the user. Eac
 
 The components contain code and styling that should be **included** in pages. Eg navbar, footer, head. (The three components included by default)
 
+
+You can view the boilerplate's full stucture [here](full structure.md)
+
 ## Variables
 
 ### PHP
