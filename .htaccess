@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteRule ^([\w-]+)/?$ pages/$1/$1.php
+RewriteRule ^error/404/?$ pages/error/404.php
+
+ErrorDocument 404 /error/404

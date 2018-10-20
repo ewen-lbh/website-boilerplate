@@ -1,0 +1,21 @@
+._mobile-only {
+    @media (min-width:$breakpt-desktop) {
+        display: none;
+    }
+}
+
+._desktop-only {
+    @media (max-width:$breakpt-desktop) {
+        display: none;
+    }
+}
+
+._center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+._center-txt {
+    text-align: center;
+}
