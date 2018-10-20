@@ -1,0 +1,110 @@
+{
+    "Page template" : {
+        "prefix": "page_template",
+        "body": [
+            "<!DOCTYPE html>",
+            "<html lang=\"$1\">",
+            "<?php require_once \\$_SERVER['DOCUMENT_ROOT'].'/components/head.php'; ?>",
+            "<body class=\"__<?php echo \\$_filename;?>\">",
+            "<?php require_once \\$_SERVER['DOCUMENT_ROOT'].'/components/navbar/navbar.php';?>",
+            "<div class=\"container\">",
+            "",
+            "$0",
+            "",
+            "</div>",
+            "<?php require_once \\$_SERVER['DOCUMENT_ROOT'].'/components/footer/footer.php'; ?>",
+            "</body>",
+            "</html>",
+        ],
+        "description": "Adds a page template (Mx3's Boilerplate)"
+    }, 
+    "Page scss template" : {
+        "prefix": "scss_template",
+        "body": [
+            ".__$1 {",
+            "",
+            "$0",
+            "",
+            "}"
+        ],
+        "description": "Adds a page-specific SASS template (Mx3's Boilerplate)"
+    },
+    "Absolute center vertical": {
+		"prefix": "centerY",
+		"body": [
+			"position: absolute;",
+			"top: 50%;",
+			"transform: translateY(-50%);"
+
+		],
+		"description": "Vertically center an element. Its parent needs to have position: relativ (Mx3's Boilerplate)e"
+
+	},
+
+	"Absolute center horizontal": {
+		"prefix": "centerX",
+		"body": [
+			"position: absolute;",
+			"left: 50%;",
+			"transform: translateX(-50%);"
+
+		],
+		"description": "Horizontally center an element. Its parent needs to have position: relativ (Mx3's Boilerplate)e"
+
+	},
+
+	"Absolute center both": {
+		"prefix": "centerXY",
+		"body": [
+			"position: absolute;",
+			"top: 50%;",
+			"left:50%;",
+			"transform: translate(-50%,-50%);"
+
+		],
+		"description": "Center an element on both axes. Its parent needs to have position: relativ (Mx3's Boilerplate)e"
+
+    },
+    "Require once a specific file": {
+		"prefix": "wrapped_req",
+		"body": "<?php require_once \\$_SERVER['DOCUMENT_ROOT'].'/$0'; ?>",
+		"description": "Add a require_once statement with document root, wrapped in php tags (Mx3's Boilerplate)",
+    },
+    "media query for phones" : {
+		"prefix": "@phone",
+		"body": [
+			"@media (max-width:\\$breakpt-desktop) {",
+			"$0",
+			"}"
+		],
+		"description": "Adds a media query with a max width of the breakpoint for desktop (Mx3's Boilerplate)."
+	},
+	"media query for desktop" : {
+		"prefix": "@desktop",
+		"body": [
+			"@media (min-width:\\$breakpt-desktop) {",
+			"$0",
+			"}"
+		],
+		"description": "Adds a media query with a min width of the breakpoint for desktop (Mx3's Boilerplate)."
+    },
+    "Target _blank": {
+		"prefix": "_blank",
+		"body": [
+			"target=\"_blank\""
+		],
+		"description": "Add a target attribute with value _blan (Mx3's Boilerplate)k"
+    },
+    "PHP document root": {
+		"prefix": "docroot",
+		"body": [
+			"\\$_SERVER['DOCUMENT_ROOT']."
+		],
+		"description": "add a php document root to the beginning of a string (hence the dot at the end (Mx3's Boilerplate))"
+    },
+    "Quick echo in html content" : {
+        "prefix": "wrapped_echo",
+        "body": "<?php echo $0;?>",
+        "description": "add a echo statement wrapped in php tags, with a semicolon included! (Mx3's Boilerplate)"
+    }
+}
