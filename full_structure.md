@@ -2,9 +2,7 @@
 
 <pre>
 website-boilerplate
-│   full_structure.md
 │   index.php
-│   README.md
 │   snippets.code-snippets
 │
 ├───components
