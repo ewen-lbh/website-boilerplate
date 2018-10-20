@@ -2,9 +2,7 @@
 
 <pre>
 website-boilerplate
-│   .gitattributes
-│   .htaccess
-│   full structure.md
+│   full_structure.md
 │   index.php
 │   README.md
 │   snippets.code-snippets
