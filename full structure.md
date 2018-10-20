@@ -1,5 +1,6 @@
-#Full structure
+# Full structure
 
+<pre>
 website-boilerplate
 │   .gitattributes
 │   .htaccess
@@ -65,3 +66,4 @@ website-boilerplate
         │
         └───dist
                 main.css
+</pre> 
