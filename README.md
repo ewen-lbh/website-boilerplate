@@ -1,8 +1,8 @@
-#Mx3's Custom Boilerplate
+# Mx3's Custom Boilerplate
 
 This boilerplate is what I start with when I begin a new website project. It uses SCSS and PHP
 
-##Presentation
+## Presentation
 
 Remember to replace all "{\_\_NAME\_\_}" occurrences in the project with your website's name.
 
@@ -14,7 +14,7 @@ By default, a set of colors, fonts, and media breakpoints are set but commented.
 
 From now on, the notation "{something}" is used to mean that *something* needs to be replaced by what it represents, eg. {title} means that *title* should be replaced with the title.
 
-##Structure
+## Structure
 
 The boilerplate consists of three main directories:
 
@@ -30,27 +30,27 @@ The pages contain folders for each page that will be **viewed** by the user. Eac
 
 The components contain code and styling that should be **included** in pages. Eg navbar, footer, head. (The three components included by default)
 
-##Variables
+## Variables
 
-###PHP
+### PHP
 
 A notation is used for PHP variables that are available across each page.
 * These variables start with one underscore. eg `$_title`.
 * They're set a the beginning of the head file.
 
-###Utility & Style Classes
+### Utility & Style Classes
 
 * Utility classes are defined in style-classes.scss.
 * They may be used to style an element, regardless of where the file is.
 * Utility classes start with an underscore, eg. `class="_center"`
 
-###Page-specific styling
+### Page-specific styling
 
 * Class names begin with *two* underscores. eg `.__home {}`
 * They're automatically set on the body tag with the variable `$_filename` defined in head.php.
 * Each sass file that styles a particular page has all its styles wrapped in a `.__{name}`, to avoid styling other pages.
 
-##.htaccess & index.php
+## .htaccess & index.php
 
 To allow for cleaner URLs, a .htaccess file is included at the root of the project, with a RewriteRule that simply remove the */page/* and .php parts, and allow for an optional closing slash at the end of the URL.
 
@@ -59,15 +59,15 @@ It also contains an ErrorDocument rule that simply redirects to error/404.php fo
 There's also an index.php at the root of the project, that starts a session (`session\_start()`) and redirects to */home/* using `header()`. 
 You may define default values here for `$_SESSION` variables.
 
-##Self-XSS
+## Self-XSS
 
 In head.php, a `warning-self-xss.js` file is imported. This file contains styled console logs for Self-XSS prevention, tho the text is in French.
 
-##Contributing
+## Contributing
 
 You may contribute to this project, but remember that the main branch will stay like what I used **MYSELF** for my projects. Issues that tell me that the project should contain x library is useless. Just add them yourself!
 
-##.code-snippets file
+## .code-snippets file
 
 This shouldn't be included in the boilerplate, but rather used by VSCode, to allow quick and easy templates insertion.
 
@@ -78,7 +78,7 @@ It contains :
 * Page-specific style template (.scss file)
 * More generic but useful little snippets, like require\_once wrapped in PHP tags with a document\_root added, or another that allows to `echo` easily in HTML content
 
-##The end
+## The end
 
 Thanks for reading all the way down! 
 
