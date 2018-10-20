@@ -1,4 +1,5 @@
 #Mx3's Custom Boilerplate
+
 This boilerplate is what I start with when I begin a new website project. It uses SCSS and PHP
 
 ##Presentation
@@ -14,6 +15,7 @@ By default, a set of colors, fonts, and media breakpoints are set but commented.
 From now on, the notation "{something}" is used to mean that *something* needs to be replaced by what it represents, eg. {title} means that *title* should be replaced with the title.
 
 ##Structure
+
 The boilerplate consists of three main directories:
 
 * Resources
@@ -29,6 +31,7 @@ The pages contain folders for each page that will be **viewed** by the user. Eac
 The components contain code and styling that should be **included** in pages. Eg navbar, footer, head. (The three components included by default)
 
 ##Variables
+
 ###PHP
 
 A notation is used for PHP variables that are available across each page.
@@ -56,12 +59,15 @@ There's also an index.php at the root of the project, that starts a session (`se
 You may define default values here for `$_SESSION` variables.
 
 ##Self-XSS
+
 In head.php, a `warning-self-xss.js` file is imported. This file contains styled console logs for Self-XSS prevention, tho the text is in French.
 
 ##Contributing
+
 You may contribute to this project, but remember that the main branch will stay like what I used **MYSELF** for my projects. Issues that tell me that the project should contain x library is useless. Just add them yourself!
 
 ##.code-snippets file
+
 This shouldn't be included in the boilerplate, but rather used by VSCode, to allow quick and easy templates insertion.
 
 It contains :
@@ -72,6 +78,7 @@ It contains :
 * More generic but useful little snippets, like require\_once wrapped in PHP tags with a document\_root added, or another that allows to `echo` easily in HTML content
 
 ##The end
+
 Thanks for reading all the way down! 
 
 For other projects, check out my [personnal website](https://mx3.thedevlab.co/), which is both in French & English
