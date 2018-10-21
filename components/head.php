@@ -5,7 +5,7 @@ if(!isset($_description)) {
     $_description = $_description;
 }
 
-if(!isset($_title) | empty($_title) | $_title = ' ') {
+if(!isset($_title) | empty($_title) | $_title === ' ') {
     $_title = '{__NAME__}';
 } elseif (!preg_match('/^\[ND\]/', $_title)) {
     $_title .= ' &ndash; {__NAME__}';
