@@ -4,7 +4,7 @@ This boilerplate is what I start with when I begin a new website project. It use
 
 ## Presentation
 
-Remember to replace all "{\_\_NAME\_\_}" occurrences in the project with your website's name.
+Remember to replace all "{\_\_NAME\_\_}" occurrences in the project with your website's name, and all "{\_\_DEF\_DESC\_\_}" with your default website description (the one you would use for the homepage)
 
 The file 'home.php' is filled with a template that should be used by all pages.
 

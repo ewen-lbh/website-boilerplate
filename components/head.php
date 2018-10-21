@@ -1,13 +1,11 @@
 <?php
 if(!isset($_description)) {
-    $_description = '{__NAME__}';
-} elseif (!preg_match('/^\[ND\]/', $_description)) {
-    $_description .= ' &ndash; {__NAME__}';
+    $_description = '{__DEF_DESC__}';
 } else {
     $_description = $_description;
 }
 
-if(!isset($_title)) {
+if(!isset($_title) | empty($_title) | $_title = ' ') {
     $_title = '{__NAME__}';
 } elseif (!preg_match('/^\[ND\]/', $_title)) {
     $_title .= ' &ndash; {__NAME__}';
