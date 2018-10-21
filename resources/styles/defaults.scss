@@ -1,9 +1,15 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: $fnt-body;
 }
 
 .container {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: $col-accent;
 }
