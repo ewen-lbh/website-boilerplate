@@ -24,4 +24,5 @@ $_filename = basename($_SERVER['PHP_SELF'], '.php')
 
     <link rel="stylesheet" href="/resources/styles/dist/main.css">
     <script src="/resources/scripts/warning-self-xss.js"></script>
+    <?php require_once $_SERVER['DOCUMENT_ROOT'].'/resources/classes/global-functions.php'; ?>
 </head>
