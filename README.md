@@ -59,7 +59,7 @@ To allow for cleaner URLs, a .htaccess file is included at the root of the proje
 
 It also contains an ErrorDocument rule that simply redirects to error/404.php for 404 errors. You may add other error codes like 403.
 
-There's also an index.php at the root of the project, that starts a session (`session\_start()`) and redirects to */home/* using `header()`. 
+There's also an index.php at the root of the project, that starts a session (`session_start()`) and redirects to */home/* using `header()`. 
 You may define default values here for `$_SESSION` variables.
 
 ## Self-XSS
@@ -68,7 +68,7 @@ In head.php, a `warning-self-xss.js` file is imported. This file contains styled
 
 ## Contributing
 
-You may contribute to this project, but remember that the main branch will stay like what I used **MYSELF** for my projects. Issues that tell me that the project should contain x library is useless. Just add them yourself!
+You may contribute to this project, but remember that the main branch will stay like what I use **MYSELF** for my projects. Issues that tell me that the project should contain x library is useless. Just add them yourself!
 
 ## .code-snippets file
 
